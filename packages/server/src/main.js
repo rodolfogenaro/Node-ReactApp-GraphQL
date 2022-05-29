@@ -1,5 +1,5 @@
 import express from 'express';
-import { ApolloServer, gql } from 'apollo-server-express';
+import { ApolloServer } from 'apollo-server-express';
 import typeDefs from './graphql/typeDefs';
 import resolvers from './graphql/resolvers';
 
@@ -13,7 +13,7 @@ server.start().then(res => {
 	server.applyMiddleware({
 		app,
 		cors: {
-			origin: "http://localhost:3000",
+			origin: "*",
 		},
 		bodyParserConfig: true,
 	});
