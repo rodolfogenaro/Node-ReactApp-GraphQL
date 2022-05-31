@@ -1,0 +1,1 @@
+Executar o servidor (pasta "server") com comando "pnpm run dev" e o cliente (pasta "web") com comando "pnpm start".
